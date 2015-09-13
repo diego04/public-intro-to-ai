@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<p>
+
+</p>
+<script>
+
+    first = function () {
+        var stepsize = 0.5
+        var target = [2,2,2,2,2,1,1,1,1,1,2,0,2,0,2,0,2,0]
+        var previous = 0
+        for (var x = 0; x < target.length ; x ++){
+            var ans = previous + (0.5*(target[x]-previous))
+            console.log(ans)
+            $('p').append(ans + '=' +previous+ '+' +stepsize+' ('+target[x]+'-'+ previous +' )'+'<br>');
+            previous = ans;
+        }
+        $('p').append('<br>')
+    }
+    first()
+
+    second = function () {
+        var stepsize = 1/8
+        var target = [2,2,2,2,2,1,1,1,1,1,2,0,2,0,2,0,2,0]
+        var previous = 0
+        for (var x = 0; x < target.length ; x ++){
+            var ans = previous + (0.5*(target[x]-previous))
+            console.log(ans)
+            $('p').append(ans + '=' +previous+ '+' +stepsize+' ('+target[x]+'-'+ previous +' )'+'<br>');
+            previous = ans;
+        }
+        $('p').append('<br>')
+    }
+    second()
+
+    third = function () {
+        var stepsize = 1
+        var target = [2,2,2,2,2,1,1,1,1,1,2,0,2,0,2,0,2,0]
+        var previous = 0
+        for (var x = 0; x < target.length ; x ++){
+            var ans = previous + (0.5*(target[x]-previous))
+            console.log(ans)
+            $('p').append(ans + '=' +previous+ '+' +stepsize+' ('+target[x]+'-'+ previous +' )'+'<br>');
+            previous = ans;
+        }
+        $('p').append('<br>')
+    }
+    third()
+
+    six = function () {
+        var target = [2,2,2,2,2,1,1,1,1,1,2,0,2,0,2,0,2,0]
+        var previous = 0
+        $('p').append('0 .....'+'<br>')
+
+        for (var x = 0; x < target.length ; x ++){
+
+            if (x > 0) {
+                var t = 1 + x
+                var stepsize = 1 / (t - 1)
+                var ans = previous + (0.5 * (target[x] - previous))
+                console.log(ans)
+                $('p').append(ans + '=' + previous + '+' + stepsize + ' (' + target[x] + '-' + previous + ' )' + '<br>');
+                previous = ans;
+            }
+        }
+        $('p').append('<br>')
+    }
+    six()
+
+    sevena = function () {
+        var stepsize = -1/2
+        var target = [-1,-1,-1,-1,-1,-1]
+        var previous = 0
+        for (var x = 0; x < target.length ; x ++){
+            var ans = previous + (0.5*(target[x]-previous))
+            console.log(ans)
+            $('p').append(ans + '=' +previous+ '+' +stepsize+' ('+target[x]+'-'+ previous +' )'+'<br>');
+            previous = ans;
+        }
+        $('p').append('<br>')
+    }
+    sevena()
+
+    sevenb = function () {
+        var stepsize = 1.5
+        var target = [-1,-1,-1,-1,-1,-1]
+        var previous = 0
+        for (var x = 0; x < target.length ; x ++){
+            var ans = previous + (0.5*(target[x]-previous))
+            console.log(ans)
+            $('p').append(ans + '=' +previous+ '+' +stepsize+' ('+target[x]+'-'+ previous +' )'+'<br>');
+            previous = ans;
+        }
+        $('p').append('<br>')
+    }
+    sevenb()
+
+    sevenc = function () {
+        var stepsize = 2
+        var target = [-1,-1,-1,-1,-1,-1]
+        var previous = 0
+        for (var x = 0; x < target.length ; x ++){
+            var ans = previous + (0.5*(target[x]-previous))
+            console.log(ans)
+            $('p').append(ans + '=' +previous+ '+' +stepsize+' ('+target[x]+'-'+ previous +' )'+'<br>');
+            previous = ans;
+        }
+        $('p').append('<br>')
+    }
+    sevenc()
+
+    sevend = function () {
+        var stepsize = 2.5
+        var target = [-1,-1,-1,-1,-1,-1]
+        var previous = 0
+        for (var x = 0; x < target.length ; x ++){
+            var ans = previous + (0.5*(target[x]-previous))
+            console.log(ans)
+            $('p').append(ans + '=' +previous+ '+' +stepsize+' ('+target[x]+'-'+ previous +' )'+'<br>');
+            previous = ans;
+        }
+        $('p').append('<br>')
+    }
+    sevend()
+
+</script>
+
+
+</body>
+</html>
